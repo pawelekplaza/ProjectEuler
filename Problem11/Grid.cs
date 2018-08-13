@@ -39,9 +39,8 @@ namespace Problem11
 
         private int UpDown(int row)
         {
-            var sequence = new Sequence
+            var sequence = new Sequence(row)
             {
-                Row = row,
                 ColumnInit = 0,
                 LoopCondition = column => column < _size,
                 ValueToCheckDifference = i => 0
@@ -51,9 +50,8 @@ namespace Problem11
 
         private int LeftRightDiagonal(int row)
         {
-            var sequence = new Sequence
+            var sequence = new Sequence(row)
             {
-                Row = row,
                 ColumnInit = 0,
                 LoopCondition = column => column < _size - 3,
                 ValueToCheckDifference = i => i
@@ -63,9 +61,8 @@ namespace Problem11
 
         private int RightLeftDiagonal(int row)
         {
-            var sequence = new Sequence
+            var sequence = new Sequence(row)
             {
-                Row = row,
                 ColumnInit = 3,
                 LoopCondition = column => column < _size,
                 ValueToCheckDifference = i => -i
