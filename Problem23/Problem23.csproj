@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9BE317DB-1C72-4C97-9081-A5A1E0D84022}</ProjectGuid>
+    <ProjectGuid>{2D5B6BBC-4C17-490F-B8E4-8EF4D23EDD2C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Problem21</RootNamespace>
-    <AssemblyName>Problem21</AssemblyName>
+    <RootNamespace>Problem23</RootNamespace>
+    <AssemblyName>Problem23</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calc.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
